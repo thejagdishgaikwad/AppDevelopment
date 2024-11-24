@@ -7,7 +7,7 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -109,13 +109,13 @@ class NextScreen extends StatelessWidget {
   final String city;
 
   const NextScreen({
-    Key? key,
+    super.key,
     required this.name,
     required this.id,
     required this.semester,
     required this.dept,
     required this.city,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
